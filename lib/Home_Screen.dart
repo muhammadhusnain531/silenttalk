@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CallGuard Home'),
+        title: Text('Silent Talk Home'),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
