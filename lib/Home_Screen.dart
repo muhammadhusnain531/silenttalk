@@ -12,34 +12,39 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Silent Talk Home'),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Auto-response Mode: Inactive',
-            style: TextStyle(fontSize: 18),
-          ),
-          SizedBox(height: 20),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => BusyTimeScreen()),
-              );
-            },
-            child: Text('Set Busy Time'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => RecordMessageScreen()),
-              );
-            },
-            child: Text('Record Message'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Auto-response Mode: Inactive',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => BusyTimeScreen(),
+                  ),
+                );
+              },
+              child: Text('Set Busy Time'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => RecordMessageScreen()),
+                );
+              },
+              child: Text('Record Message'),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
+
